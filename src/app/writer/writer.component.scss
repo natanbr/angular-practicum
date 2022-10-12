@@ -1,0 +1,39 @@
+@import '../../styles.scss';
+
+.add-text {
+  display: flex;
+  flex-direction: row;
+  padding: 1vmin;
+
+  textarea {
+    font-size: 1.1em;
+    width: 100%;
+    resize: vertical;
+    min-height: 5vh;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: lighten($color: #222222, $amount: 3%);
+    color: var(--light2);
+  }
+
+  .submit {
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+
+    i {
+      color: var(--secondary);
+      font-size: 1.5em;
+
+      &.enabled {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.scrollable {
+  @include scrollable();
+}

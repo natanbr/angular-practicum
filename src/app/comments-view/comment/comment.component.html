@@ -1,0 +1,45 @@
+<div class="comment" [class.shift]="comment.parent">
+
+  <div class="comment__user-image">
+    <span class="user-first-latter">{{ userFirstLatter }}</span>
+  </div>
+
+  <div class="message">
+
+    <div class="message__header">
+      <div class="left">
+        <h4 *ngIf="comment.title" class="title">{{ comment.title }}</h4>
+        <span class="user">{{ comment.user.name }}</span>
+      </div>
+      <div class="right">
+        <span class="time">{{ comment.timestamp | date }}</span>
+      </div>
+    </div>
+
+    <div class="message__citation" *ngIf="comment.parent">
+      <span class="citation__label">Reply To:</span>
+      <span class="citation__title">{{ comment.parent.title }}</span>
+      <span class="citation__label">By:</span>
+      <span class="citation__user">{{ comment.parent.user?.name }}</span>
+    </div>
+
+    <div class="message__content">
+      <span class="text">{{ comment.comment }}</span>
+    </div>
+
+    <div class="message__controls" *ngIf="!replyOn">
+      <button (click)="enableReply()">
+        <i class="fa fa-reply"></i>
+      </button>
+      <button (click)="delete()">
+        <i class="fa fa-trash delete"></i>
+      </button>
+    </div>
+
+    <writer
+      *ngIf="replyOn"
+      [parentId]="comment?.id"
+      (done)="disableReply()">
+    </writer>
+  </div>
+</div>

@@ -9,7 +9,7 @@
     },
     "array-type": false,
     "arrow-return-shorthand": true,
-    "curly": true,
+    "curly": false,
     "deprecation": {
       "severity": "warning"
     },
@@ -23,9 +23,8 @@
       "camelCase"
     ],
     "component-selector": [
-      true,
+      false,
       "element",
-      "app",
       "kebab-case"
     ],
     "eofline": true,
@@ -120,7 +119,8 @@
       "options": [
         "ban-keywords",
         "check-format",
-        "allow-pascal-case"
+        "allow-pascal-case",
+        "allow-leading-underscore"
       ]
     },
     "whitespace": {

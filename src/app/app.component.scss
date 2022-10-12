@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.page {
+  padding: 1rem;
+  width: 900px;
+  max-width: 900px;
+  margin: 2vh auto;
+  font-size: 1.3em;
+  background-color: var(--primary);
+  border-radius: 5px;
+  box-shadow: 0px 11px 23px -4px rgb(0 24 44 / 50%);
+
+  &__layout {
+    display: grid;
+    grid-template-rows: min-content min-content min-content auto min-content 1fr;
+  }
+}
+
+.comments {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+loader {
+  margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+<div class="add-text">
+  <textarea
+    class="scrollable"
+    placeholder="Start typing a comment"
+    [(ngModel)]="comment"></textarea>
+  <button class="submit"
+          [disabled]="comment?.length <= 0"
+          (click)="addComment()">
+    <i class="fa fa-paper-plane" [class.enabled]="comment?.length > 0"></i>
+  </button>
+</div>

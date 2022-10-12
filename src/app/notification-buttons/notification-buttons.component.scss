@@ -1,0 +1,21 @@
+.btn {
+  background: transparent;
+  cursor: pointer;
+  color: var(--white);
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1em;
+  margin: 10px;
+  width: 10ch;
+}
+
+h5 {
+  margin: 10px;
+  align-self: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
