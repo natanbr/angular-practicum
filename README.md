@@ -57,7 +57,7 @@ Reminder: create a new branch and open a new PR for each bug and feature.
   Lastly, in this part you are required to do a quick code review.
   Our goal is to see if you can recognize all the problematic and "smelly" code issues. 
   - ### Instructions:
-    1. Create a new pull request of `code-review-task` into `main` branch
+    1. Create a new pull request from the existing `code-review-task` branch into the `main` branch
     2. Navigate to that pull request and add your review as comments
   - ### 💡 Tips:
     - In your daly work you will create code review request and you will review other developers code. Think of this as a real review you are doing to one of your co-workers.
