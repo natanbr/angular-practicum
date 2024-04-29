@@ -29,8 +29,8 @@ export class NotificationButtonsComponent implements OnInit {
     console.log(' - TODO: Implement -', );
   }
 
-  toogle(): void {
-    this.switchStateService.toogle();
+  toggle(): void {
+    this.switchStateService.toggle();
   }
 
 }

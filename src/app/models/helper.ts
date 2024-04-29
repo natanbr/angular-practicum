@@ -1,4 +1,4 @@
-import { GetComment, Comment } from './commet';
+import { GetComment, Comment } from './comment';
 
 export class CommentsHelper {
   static MapGetComments(getComments: Array<GetComment>): Array<Comment> {

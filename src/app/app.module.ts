@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpInterceptorService } from './services/http-interseptor.service';
 import { LoaderComponent } from './loader/loader.component';
 import { NotificationButtonsComponent } from './notification-buttons/notification-buttons.component';
-import { SwitchsComponent } from './switchs/switchs.component';
+import { SwitchesComponent } from './switchs/switches.component';
 import { CommentsSummeryComponent } from './comments-summary/comments-summary.component';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { CommentsSummeryComponent } from './comments-summary/comments-summary.co
     WriterComponent,
     LoaderComponent,
     NotificationButtonsComponent,
-    SwitchsComponent,
+    SwitchesComponent,
     CommentsSummeryComponent,
   ],
   providers: [

@@ -5,7 +5,7 @@ export interface User {
 
 export interface Comment {
   id: number;
-  parent: Comment;
+  parent?: Comment;
   timestamp: number;
   user: User;
   title?: string;

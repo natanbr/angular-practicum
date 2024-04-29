@@ -11,7 +11,7 @@ export class SwitchStateService {
     return this._switchState;
   }
 
-  toogle(): void {
+  toggle(): void {
     this._switchState = !this._switchState;
   }
 }

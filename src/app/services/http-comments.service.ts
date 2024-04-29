@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { Comment, CommentResponse, PostComment, UpdateComment } from '../models/commet';
+import { Comment, CommentResponse, PostComment, UpdateComment } from '../models/comment';
 import { environment } from './../../environments/environment';
 
 @Injectable({

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Comment, GetComment } from '../models/commet';
+import { Comment, GetComment } from '../models/comment';
 import { HttpCommentsService } from '../services/http-comments.service';
 import { ProgressService } from '../services/progress.service';
 import { CommentsHelper } from '../models/helper';

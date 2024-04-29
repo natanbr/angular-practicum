@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Comment } from './models/commet';
+import { Comment } from './models/comment';
 import { CommentsService } from './services/comments.service';
+import { distinct, distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent implements OnInit {
   comments$: Observable<Array<Comment>>;
 
   constructor(private readonly commentsService: CommentsService) {
-    this.comments$ = this.commentsService.comments$;
+    this.comments$ = this.commentsService.comments$
   }
 
   ngOnInit(): void {

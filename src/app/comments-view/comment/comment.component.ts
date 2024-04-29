@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CommentsService } from 'src/app/services/comments.service';
-import { Comment } from '../../models/commet';
+import { Comment } from '../../models/comment';
 
 @Component({
   selector: 'comment',
